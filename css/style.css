@@ -1,0 +1,241 @@
+/* CSS RESET */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+
+/* Navigation Bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position:sticky;
+    top: 0px;
+   
+}
+
+/* Navigation Bar: LOGO AND IMAGE */
+#logo{
+    margin: 3px 15px;
+    
+}
+
+#logo img{
+    margin: 16px 12px;
+    height: 56px;
+    width: 56px;
+}
+
+
+/* Navigation Bar: LIST STYLING */
+
+
+#navbar ul{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+#navbar ul li{
+    
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+#navbar ul li a:hover{
+/* #navbar ul li a.active */
+ 
+    background-color: white;
+    color: black;
+}
+
+/* HOME SECTION */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url(../bg1.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 600px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.79;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+    
+}
+/* Services Section */
+#services-container{
+    background-color: #3a0707d9;;
+}
+#services{
+    /* margin: 34px; */
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 20px 12px;
+    border-radius: 25px;
+    background-color: #e6cece;
+    
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+    
+}
+#services .box p{
+    font-family: 'Lato', sans-serif;
+}
+
+/* CLIENTS SECTION */
+#client-section{
+    /* height: 330px; */
+    position: relative;
+
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(../bg.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+.client-items{
+    padding: 35px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    /* height: 100px; */
+    width: 120px;
+}
+
+/* CONTACT SECTION */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+z-index: -1;
+opacity: 0.5;
+background: url(../Contact.jpg) no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 0.9rem;
+    font-family: 'Lato', sans-serif;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    /* background-color: black; */
+    border-radius: 10px;
+    font-size: 0.7rem;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+}
+
+/* UTILITY CLASSES */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Lato', sans-serif;
+}
+
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Lato', sans-serif;
+}
+
+.btn{
+    padding: 5px 12px;
+    margin: 12px;
+    border: 2px solid red;
+    font-size: 1.5rem;
+    background-color: orangered;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
